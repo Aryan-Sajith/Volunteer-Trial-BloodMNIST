@@ -63,7 +63,10 @@ API keys (e.g., `WANDB_API_KEY`) go in `.env`, which is git-ignored. **Never har
 | `.env` | Secrets |
 | `**/smoke-test/` | Always recreatable |
 
-Models and logs are tracked via W&B artifacts, not git.
+Models are tracked via W&B artifacts, not git.
+
+Training/Evaluation logs are tracked directly on git since
+they are small and relevant to the best saved model.
 
 ---
 
