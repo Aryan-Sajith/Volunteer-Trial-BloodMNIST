@@ -1,2 +1,29 @@
 # Maintainer-only setup (not for volunteers)
 trial-setup/
+
+# Secrets
+.env
+.env.*
+
+# Data / artifacts (never commit)
+data/
+wandb/
+outputs/
+*.pth
+*.pt
+*.ckpt
+
+# Re-creatable scratch
+**/smoke-test/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+.vscode/

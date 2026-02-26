@@ -82,10 +82,10 @@ All commands use `python -m` module syntax. Never `cd` into subdirectories.
 
 ```bash
 # ✅ Correct
-python -m experiments.bloodmnist.src.train
+python -m src.train
 
 # ❌ Breaks imports
-cd experiments/bloodmnist && python src/train.py
+cd src && python train.py
 ```
 
 ---
